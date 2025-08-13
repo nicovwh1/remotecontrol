@@ -1,4 +1,4 @@
-# Sistema de Control Remoto con Python
+# Sistema de Control Remoto con Python (fork [de](https://github.com/pysrc/remote-desktop))
 
 Un sistema completo de control remoto implementado en Python que permite controlar un equipo de forma remota a través de la red. El sistema consta de dos componentes principales: un servidor (extremo controlado) y un cliente (extremo controlador).
 
