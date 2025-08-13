@@ -1,132 +1,224 @@
-# Control Remoto de Escritorio con Python
+# Sistema de Control Remoto con Python
 
-## Descripción
+Un sistema completo de control remoto implementado en Python que permite controlar un equipo de forma remota a través de la red. El sistema consta de dos componentes principales: un servidor (extremo controlado) y un cliente (extremo controlador).
 
-Este proyecto implementa un sistema de control remoto de escritorio desarrollado en Python que permite controlar una computadora de forma remota a través de la red. El sistema utiliza técnicas de compresión de imágenes y transmisión diferencial para optimizar el rendimiento.
+## 📋 Tabla de Contenidos
 
-## Estructura del Proyecto
+- [Descripción](#descripción)
+- [Arquitectura del Sistema](#arquitectura-del-sistema)
+- [Componentes](#componentes)
+- [Requerimientos](#requerimientos)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Modo Debug](#modo-debug)
+- [Características](#características)
+- [Recursos Adicionales](#recursos-adicionales)
 
-- **`bectrl/`** - Código del extremo controlado (servidor)
-- **`ctrl/`** - Código del extremo controlador (cliente)
+## 📖 Descripción
 
-## Características Principales
+Este sistema permite el control remoto de escritorio con las siguientes funcionalidades:
+- Captura y transmisión de pantalla en tiempo real
+- Control de mouse y teclado remotos
+- Compresión de imágenes para optimizar el ancho de banda
+- Soporte para proxy SOCKS5
+- Sistema de logging con rotación automática
+- Modo debug para diagnósticos detallados
 
-- ✅ **Transmisión de pantalla en tiempo real** con compresión JPEG
-- ✅ **Control completo de mouse y teclado** remoto
-- ✅ **Optimización de ancho de banda** mediante transmisión diferencial
-- ✅ **Soporte multiplataforma** (Windows, Linux, macOS)
-- ✅ **Soporte para proxy SOCKS5** para conexiones seguras
-- ✅ **Interfaz gráfica intuitiva** con escalado de pantalla
+## 🏗️ Arquitectura del Sistema
 
-## Instalación de Dependencias
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    SISTEMA DE CONTROL REMOTO                   │
+└─────────────────────────────────────────────────────────────────┘
 
+┌─────────────────────┐                    ┌─────────────────────┐
+│     SERVIDOR        │                    │      CLIENTE        │
+│    (bectrl/)        │                    │     (ctrl/)         │
+│                     │                    │                     │
+│ ┌─────────────────┐ │                    │ ┌─────────────────┐ │
+│ │   Captura de    │ │                    │ │   Interfaz      │ │
+│ │   Pantalla      │ │                    │ │   Gráfica       │ │
+│ │   (PIL/OpenCV)  │ │                    │ │   (Tkinter)     │ │
+│ └─────────────────┘ │                    │ └─────────────────┘ │
+│          │          │                    │          │          │
+│          ▼          │                    │          ▼          │
+│ ┌─────────────────┐ │                    │ ┌─────────────────┐ │
+│ │   Compresión    │ │                    │ │   Visualización │ │
+│ │   de Imagen     │ │                    │ │   de Pantalla   │ │
+│ │   (JPEG)        │ │                    │ │   Remota        │ │
+│ └─────────────────┘ │                    │ └─────────────────┘ │
+│          │          │                    │          │          │
+│          ▼          │                    │          ▼          │
+│ ┌─────────────────┐ │    CONEXIÓN TCP    │ ┌─────────────────┐ │
+│ │   Servidor      │ │◄──────────────────►│ │   Cliente       │ │
+│ │   Socket        │ │    Puerto 3380     │ │   Socket        │ │
+│ │   (Puerto 3380) │ │                    │ │                 │ │
+│ └─────────────────┘ │                    │ └─────────────────┘ │
+│          │          │                    │          │          │
+│          ▼          │                    │          ▼          │
+│ ┌─────────────────┐ │                    │ ┌─────────────────┐ │
+│ │   Control de    │ │                    │ │   Eventos de    │ │
+│ │   Mouse/Teclado │ │                    │ │   Usuario       │ │
+│ │   (PyAutoGUI)   │ │                    │ │   (Mouse/Teclado)│ │
+│ └─────────────────┘ │                    │ └─────────────────┘ │
+│                     │                    │                     │
+│ ┌─────────────────┐ │                    │ ┌─────────────────┐ │
+│ │   Sistema de    │ │                    │ │   Sistema de    │ │
+│ │   Logging       │ │                    │ │   Logging       │ │
+│ │   (Rotación)    │ │                    │ │   (Rotación)    │ │
+│ └─────────────────┘ │                    │ └─────────────────┘ │
+└─────────────────────┘                    └─────────────────────┘
+           │                                          │
+           ▼                                          ▼
+┌─────────────────────┐                    ┌─────────────────────┐
+│  logs/              │                    │  logs/              │
+│  remote_server.log  │                    │  remote_client.log  │
+└─────────────────────┘                    └─────────────────────┘
+
+                    ┌─────────────────────┐
+                    │   PROXY SOCKS5      │
+                    │   (Opcional)        │
+                    │   novpn.cn          │
+                    └─────────────────────┘
+```
+
+## 🧩 Componentes
+
+### Servidor (bectrl/)
+- **main.py**: Servidor principal sin interfaz gráfica
+- **_keyboard.py**: Mapeo de códigos de teclado multiplataforma
+- **Funcionalidades**:
+  - Captura de pantalla automática
+  - Procesamiento de comandos de control
+  - Compresión de imágenes
+  - Detección automática de IP
+  - Sistema de logging
+
+### Cliente (ctrl/)
+- **main.pyw**: Cliente con interfaz gráfica
+- **Funcionalidades**:
+  - Interfaz de usuario intuitiva
+  - Visualización de pantalla remota
+  - Control de mouse y teclado
+  - Soporte para proxy SOCKS5
+  - Escalado de imagen
+
+## 📦 Requerimientos
+
+### Dependencias de Python
+```
+numpy>=1.21.0          # Procesamiento de arrays numéricos
+Pillow>=8.3.0          # Manipulación de imágenes
+PyAutoGUI>=0.9.53      # Automatización de GUI
+opencv-python>=4.5.0   # Procesamiento de imágenes y video
+mouse>=0.7.1           # Control de mouse
+```
+
+### Módulos Estándar Utilizados
+- **socket**: Comunicación de red TCP
+- **threading**: Manejo de hilos concurrentes
+- **struct**: Empaquetado/desempaquetado de datos binarios
+- **time**: Manejo de tiempo y delays
+- **platform**: Detección de sistema operativo
+- **argparse**: Procesamiento de argumentos de línea de comandos
+- **logging**: Sistema de registro de eventos
+- **tkinter**: Interfaz gráfica (solo cliente)
+- **re**: Expresiones regulares
+- **subprocess**: Ejecución de procesos del sistema
+- **os**: Operaciones del sistema operativo
+
+### Requerimientos del Sistema
+- **Python 3.7+**
+- **Windows/Linux/macOS**
+- **Conexión de red TCP**
+- **Permisos de captura de pantalla**
+- **Permisos de control de mouse/teclado**
+
+## 🚀 Instalación
+
+1. **Clonar el repositorio**:
+   ```bash
+   git clone <repository-url>
+   cd remote-desktop-master
+   ```
+
+2. **Instalar dependencias**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Verificar instalación**:
+   ```bash
+   python bectrl/main.py --help
+   python ctrl/main.pyw --help
+   ```
+
+## 💻 Uso
+
+### Servidor (Equipo a Controlar)
 ```bash
-pip install -r requirements.txt
+# Modo normal (sin ventanas gráficas)
+python bectrl/main.py
+
+# Modo debug (logging detallado)
+python bectrl/main.py --debug
 ```
 
-### Dependencias Requeridas
-
-- `numpy` - Procesamiento de arrays numéricos
-- `Pillow` - Manipulación de imágenes
-- `PyAutoGUI` - Control de mouse y teclado
-- `opencv-python` - Procesamiento de imágenes y compresión
-- `mouse` - Control avanzado del mouse
-
-## Uso Rápido
-
-### 1. Ejecutar el Servidor (Extremo Controlado)
-
+### Cliente (Equipo Controlador)
 ```bash
-cd bectrl
-python main.py
+# Modo normal
+python ctrl/main.pyw
+
+# Modo debug
+python ctrl/main.pyw --debug
 ```
 
-El servidor mostrará la dirección IP y puerto de conexión.
-
-### 2. Ejecutar el Cliente (Extremo Controlador)
-
+### Script de Ayuda
+Utiliza el script interactivo para facilitar el uso:
 ```bash
-cd ctrl
-python main.pyw
+run_debug_example.bat
 ```
 
-Ingresa la dirección IP:puerto del servidor y haz clic en "Show".
+## 🐛 Modo Debug
 
-## Diagrama de Flujo del Sistema
+El sistema incluye un modo debug completo con:
+- **Logging detallado** de todas las operaciones
+- **Rotación automática** de logs cada 24 horas
+- **Retención** de 30 días de historial
+- **Archivos separados** para servidor y cliente
 
-```
-┌─────────────────┐         ┌─────────────────┐
-│   CLIENTE       │         │    SERVIDOR     │
-│   (ctrl/)       │         │   (bectrl/)     │
-└─────────────────┘         └─────────────────┘
-         │                           │
-         │ 1. Conexión TCP           │
-         ├──────────────────────────►│
-         │                           │
-         │ 2. Envío plataforma       │
-         ├──────────────────────────►│
-         │                           │
-         │ 3. Captura pantalla       │
-         │◄──────────────────────────┤
-         │                           │
-         │ 4. Eventos mouse/teclado  │
-         ├──────────────────────────►│
-         │                           │
-         │ 5. Transmisión diferencial│
-         │◄──────────────────────────┤
-         │                           │
-         │ 6. Actualización pantalla │
-         │◄──────────────────────────┤
-```
+### Archivos de Log
+- `logs/remote_server.log` - Logs del servidor
+- `logs/remote_client.log` - Logs del cliente
 
-## Arquitectura Técnica
+Para más información, consulta [DEBUG_README.md](DEBUG_README.md)
 
-### Servidor (bectrl/main.py)
+## ✨ Características
 
-1. **Captura de Pantalla**: Utiliza `ImageGrab` para capturar la pantalla
-2. **Compresión**: Aplica compresión JPEG con calidad configurable
-3. **Transmisión Diferencial**: Envía solo los cambios entre frames
-4. **Control de Eventos**: Procesa comandos de mouse y teclado remotos
+- 🖥️ **Control remoto completo**: Mouse, teclado y visualización
+- 🔒 **Sin interfaz gráfica en servidor**: Ideal para servidores headless
+- 🌐 **Soporte para proxy**: Compatible con SOCKS5
+- 📊 **Compresión inteligente**: Optimización automática de ancho de banda
+- 🔍 **Sistema de logging**: Diagnósticos detallados y rotación automática
+- 🎯 **Multiplataforma**: Windows, Linux y macOS
+- ⚡ **Alto rendimiento**: Transmisión eficiente de imágenes
+- 🛠️ **Modo debug**: Herramientas avanzadas de diagnóstico
 
-### Cliente (ctrl/main.pyw)
+## 📚 Recursos Adicionales
 
-1. **Interfaz Gráfica**: Ventana Tkinter para configuración y visualización
-2. **Recepción de Imágenes**: Decodifica y muestra frames recibidos
-3. **Captura de Eventos**: Envía eventos de mouse y teclado al servidor
-4. **Escalado**: Permite ajustar el tamaño de visualización
+### Implementación en Rust
+Versión optimizada disponible en: https://github.com/pysrc/diffscreen
 
-## Configuración Avanzada
+### Videos Explicativos
+- [Primera Lección](https://www.bilibili.com/video/BV1Nk4y117f2/)
+- [Segunda Lección](https://www.bilibili.com/video/BV1oz4y1o7fx/)
+- [Tercera Lección](https://www.bilibili.com/video/BV1jA411J7Jj/)
+- [Cuarta Lección](https://www.bilibili.com/video/BV1va4y1j7Q8/)
+- [Quinta Lección](https://www.bilibili.com/video/BV1e54y1y7eq/)
 
-### Proxy SOCKS5
+### Proxy Recomendado
+Se recomienda utilizar un proxy SOCKS5 de [novpn.cn](https://novpn.cn) para conexiones a través de internet.
 
-Para usar un proxy SOCKS5:
-1. Haz clic en "Proxy" en la interfaz del cliente
-2. Ingresa la dirección del proxy (ej: `127.0.0.1:1080`)
-3. Conecta normalmente al servidor
+---
 
-### Parámetros de Rendimiento
-
-- **IDLE**: Intervalo entre capturas (0.05s por defecto)
-- **IMQUALITY**: Calidad JPEG (50 por defecto, rango 1-100)
-- **SCROLL_NUM**: Sensibilidad del scroll del mouse (5 por defecto)
-
-## Implementación en Rust
-
-Para una versión más eficiente en Rust, consulta:
-https://github.com/pysrc/diffscreen
-
-## Videos Tutoriales (Chino)
-
-- [Primera parte](https://www.bilibili.com/video/BV1Nk4y117f2/) - Introducción y configuración
-- [Segunda parte](https://www.bilibili.com/video/BV1oz4y1o7fx/) - Implementación del servidor
-- [Tercera parte](https://www.bilibili.com/video/BV1jA411J7Jj/) - Implementación del cliente
-- [Cuarta parte](https://www.bilibili.com/video/BV1va4y1j7Q8/) - Optimizaciones
-- [Quinta parte](https://www.bilibili.com/video/BV1e54y1y7eq/) - Características avanzadas
-
-## Licencia
-
-Ver archivo LICENSE para más detalles.
-
-## Contribuciones
-
-Las contribuciones son bienvenidas. Por favor, abre un issue o envía un pull request.
+**Nota**: Este sistema está diseñado para uso educativo y administrativo legítimo. Asegúrate de tener los permisos apropiados antes de usar en cualquier sistema.
