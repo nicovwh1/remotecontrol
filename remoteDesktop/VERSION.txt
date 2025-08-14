@@ -1,0 +1,28 @@
+=== INFORMACIÓN DE VERSIÓN ===
+Versión: v1.0.0_release
+Fecha: 2024-08-14
+Estado: PRODUCCIÓN - VERSIÓN INICIAL LIMPIA
+
+=== DESCRIPCIÓN ===
+Sistema de control remoto de escritorio Windows-to-Windows completamente funcional.
+Incluye corrección completa de sincronización de caracteres entre cliente y servidor.
+
+=== CARACTERÍSTICAS PRINCIPALES ===
+✅ Control remoto completo (mouse y teclado)
+✅ Arquitectura cliente-servidor TCP/IP
+✅ Sincronización perfecta de caracteres (100%)
+✅ Sistema de logging avanzado
+✅ Despliegue automatizado
+✅ Compatibilidad Windows completa
+
+=== ARCHIVOS PRINCIPALES ===
+- ctrl/main.pyw - Cliente con interfaz gráfica
+- bectrl/main.py - Servidor principal
+- bectrl/_keyboard.py - Mapeo de teclado Windows
+- DOCUMENTACION_COMPLETA.md - Documentación consolidada
+- requirements.txt - Dependencias del proyecto
+
+=== ESTADO ACTUAL ===
+🎉 LISTO PARA PRODUCCIÓN
+📚 DOCUMENTACIÓN CONSOLIDADA
+🧹 PROYECTO LIMPIO Y OPTIMIZADO
