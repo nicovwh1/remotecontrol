@@ -149,8 +149,8 @@ python main.pyw
 ```
 
 ### Destinos de Producción
-1. `D:\Users\Nico\Downloads\remoteDesktop\`
-2. `D:\shared\nico\Desktop\Netcool\Docs\2025\Wos\export\remoteDesktop\`
+1. `D:\`
+2. `D:\shared\`
 
 ### Archivos Desplegados
 - **ctrl/main.pyw** (con corrección de keycodes)
