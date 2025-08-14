@@ -213,7 +213,7 @@ def print_client_stats():
         logger.info("=================================")
 
 
-filename="D:\\shared\\nico\\Desktop\\Netcool\\script\\ipwork.txt"
+filename="ipwork.txt"
 
 # Plataforma
 PLAT = b''
