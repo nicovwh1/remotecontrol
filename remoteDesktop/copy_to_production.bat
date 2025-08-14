@@ -7,8 +7,8 @@ echo.
 
 REM Configuracion de directorios
 set SOURCE_DIR=%~dp0
-set DEST1=D:\Users\Nico\Downloads\remoteDesktop\
-set DEST2=D:\shared\nico\Desktop\Netcool\Docs\2025\Wos\export\remoteDesktop\
+set DEST1=%%
+set DEST2=%%
 
 echo Directorio origen: %SOURCE_DIR%
 echo Destino 1: %DEST1%
@@ -98,4 +98,4 @@ echo - %DEST1%
 echo - %DEST2%
 echo.
 echo Presiona cualquier tecla para salir...
-pause >nul
+ 
