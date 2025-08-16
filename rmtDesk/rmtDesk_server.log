@@ -1,0 +1,154 @@
+2025-08-15 17:34:54,722 - INFO - Sistema de logging inicializado
+2025-08-15 17:34:54,722 - INFO - Detectando IP local del servidor...
+2025-08-15 17:34:54,744 - INFO - Filtrando interfaces: ['192.168.1.19', '192.168.56.1']
+2025-08-15 17:34:54,744 - INFO - IP local válida encontrada: 192.168.1.19
+2025-08-15 17:34:54,744 - INFO - IP local detectada: 192.168.1.19
+2025-08-15 17:34:54,744 - INFO - Interfaces disponibles: ['192.168.1.19', '192.168.56.1']
+2025-08-15 17:34:54,744 - INFO - Servidor configurado en 192.168.1.19:3380
+2025-08-15 17:34:54,744 - INFO - Logs guardados en: c:\developers\python\rmtDesk\rmtDesk_server.log
+2025-08-15 17:34:54,744 - INFO - Servidor iniciado en 192.168.1.19:3380 (Modo silencioso)
+2025-08-15 17:34:54,744 - INFO - Servidor listo para aceptar conexiones
+2025-08-15 17:35:21,294 - INFO - Sistema de logging inicializado
+2025-08-15 17:35:21,294 - INFO - Detectando IP local del servidor...
+2025-08-15 17:35:21,299 - INFO - Filtrando interfaces: ['192.168.1.19', '192.168.56.1']
+2025-08-15 17:35:21,299 - INFO - IP local válida encontrada: 192.168.1.19
+2025-08-15 17:35:21,299 - INFO - IP local detectada: 192.168.1.19
+2025-08-15 17:35:21,300 - INFO - Interfaces disponibles: ['192.168.1.19', '192.168.56.1']
+2025-08-15 17:35:21,300 - INFO - Servidor configurado en 192.168.1.19:3380
+2025-08-15 17:35:21,300 - INFO - Logs guardados en: c:\developers\python\rmtDesk\rmtDesk_server.log
+2025-08-15 17:36:59,881 - INFO - Sistema de logging inicializado
+2025-08-15 17:36:59,881 - INFO - Detectando IP local del servidor...
+2025-08-15 17:36:59,886 - INFO - Filtrando interfaces: ['192.168.1.19', '192.168.56.1']
+2025-08-15 17:36:59,886 - INFO - IP local válida encontrada: 192.168.1.19
+2025-08-15 17:36:59,886 - INFO - IP local detectada: 192.168.1.19
+2025-08-15 17:36:59,886 - INFO - Interfaces disponibles: ['192.168.1.19', '192.168.56.1']
+2025-08-15 17:36:59,887 - INFO - Servidor configurado en 192.168.1.19:3380
+2025-08-15 17:36:59,887 - INFO - Logs guardados en: c:\developers\python\rmtDesk\rmtDesk_server.log
+2025-08-15 17:36:59,887 - INFO - Servidor iniciado en 192.168.1.19:3380 (Modo silencioso)
+2025-08-15 17:36:59,887 - INFO - Servidor listo para aceptar conexiones
+2025-08-15 17:39:07,572 - INFO - Sistema de logging inicializado
+2025-08-15 17:39:07,572 - INFO - Detectando IP local del servidor...
+2025-08-15 17:39:07,577 - INFO - Filtrando interfaces: ['192.168.1.19', '192.168.56.1']
+2025-08-15 17:39:07,577 - INFO - IP local válida encontrada: 192.168.1.19
+2025-08-15 17:39:07,577 - INFO - IP local detectada: 192.168.1.19
+2025-08-15 17:39:07,577 - INFO - Interfaces disponibles: ['192.168.1.19', '192.168.56.1']
+2025-08-15 17:39:07,577 - INFO - Servidor configurado en 192.168.1.19:3380
+2025-08-15 17:39:07,577 - INFO - Logs guardados en: c:\developers\python\rmtDesk\rmtDesk_server.log
+2025-08-15 17:39:07,577 - INFO - Servidor iniciado en 192.168.1.19:3380 (Modo silencioso)
+2025-08-15 17:39:07,577 - INFO - Servidor listo para aceptar conexiones
+2025-08-15 17:39:32,442 - INFO - Nueva conexión desde: ('192.168.1.19', 64044)
+2025-08-15 17:39:32,442 - INFO - Iniciando función de manejo de imágenes
+2025-08-15 17:39:32,442 - INFO - Capturando imagen inicial
+2025-08-15 17:39:32,468 - INFO - Iniciando función de control
+2025-08-15 17:39:32,469 - INFO - Hilos de manejo iniciados para la conexión
+2025-08-15 17:39:32,469 - INFO - Plataforma del cliente: win
+2025-08-15 17:39:32,469 - INFO - Mapeo de teclas configurado
+2025-08-15 17:39:32,509 - INFO - Imagen inicial capturada: 167163 bytes
+2025-08-15 17:39:32,510 - INFO - Imagen inicial enviada al cliente
+2025-08-15 17:39:32,634 - INFO - Operación: key=4, op=0, x=1497, y=763
+2025-08-15 17:39:32,695 - INFO - Enviada imagen completa: 174227 bytes
+2025-08-15 17:39:32,698 - INFO - Operación: key=4, op=0, x=1493, y=761
+2025-08-15 17:39:32,786 - INFO - Operación: key=4, op=0, x=1484, y=758
+2025-08-15 17:39:32,837 - INFO - Operación: key=4, op=0, x=1455, y=749
+2025-08-15 17:39:32,866 - INFO - Enviada imagen completa: 163086 bytes
+2025-08-15 17:39:32,901 - INFO - Operación: key=4, op=0, x=1426, y=739
+2025-08-15 17:39:32,951 - INFO - Operación: key=4, op=0, x=1325, y=672
+2025-08-15 17:39:33,023 - INFO - Operación: key=4, op=0, x=1240, y=591
+2025-08-15 17:39:33,031 - INFO - Enviada imagen completa: 153648 bytes
+2025-08-15 17:39:33,076 - INFO - Operación: key=4, op=0, x=1164, y=501
+2025-08-15 17:39:33,129 - INFO - Operación: key=4, op=0, x=1123, y=468
+2025-08-15 17:39:33,184 - INFO - Operación: key=4, op=0, x=1103, y=447
+2025-08-15 17:39:33,185 - INFO - Enviada imagen completa: 145482 bytes
+2025-08-15 17:39:33,236 - INFO - Operación: key=4, op=0, x=1122, y=457
+2025-08-15 17:39:33,292 - INFO - Operación: key=4, op=0, x=1162, y=507
+2025-08-15 17:39:33,342 - INFO - Enviada imagen completa: 143522 bytes
+2025-08-15 17:39:33,343 - INFO - Operación: key=4, op=0, x=1209, y=478
+2025-08-15 17:39:33,410 - INFO - Operación: key=4, op=0, x=1243, y=429
+2025-08-15 17:39:33,449 - INFO - Operación: key=4, op=0, x=1262, y=405
+2025-08-15 17:39:33,491 - INFO - Enviada imagen completa: 141726 bytes
+2025-08-15 17:39:33,563 - INFO - Operación: key=4, op=0, x=1277, y=379
+2025-08-15 17:39:33,639 - INFO - Enviada imagen completa: 141121 bytes
+2025-08-15 17:39:33,640 - INFO - Operación: key=4, op=0, x=1277, y=369
+2025-08-15 17:39:33,676 - INFO - Operación: key=1, op=100, x=1277, y=369
+2025-08-15 17:39:33,778 - INFO - Mouse: botón izquierdo presionado
+2025-08-15 17:39:33,778 - INFO - Operación: key=4, op=0, x=1276, y=369
+2025-08-15 17:39:33,778 - INFO - Operación: key=1, op=117, x=1274, y=369
+2025-08-15 17:39:33,780 - INFO - Enviada imagen completa: 141582 bytes
+2025-08-15 17:39:33,879 - INFO - Mouse: botón izquierdo soltado
+2025-08-15 17:39:33,879 - INFO - Operación: key=4, op=0, x=1208, y=389
+2025-08-15 17:39:33,879 - INFO - Operación: key=4, op=0, x=1042, y=434
+2025-08-15 17:39:33,891 - INFO - Operación: key=1, op=100, x=1001, y=455
+2025-08-15 17:39:33,914 - INFO - Enviada imagen completa: 144257 bytes
+2025-08-15 17:39:33,993 - INFO - Mouse: botón izquierdo presionado
+2025-08-15 17:39:33,993 - INFO - Operación: key=4, op=0, x=1000, y=456
+2025-08-15 17:39:33,993 - INFO - Operación: key=1, op=117, x=1000, y=464
+2025-08-15 17:39:34,048 - INFO - Enviada imagen completa: 143692 bytes
+2025-08-15 17:39:34,095 - INFO - Mouse: botón izquierdo soltado
+2025-08-15 17:39:34,095 - INFO - Operación: key=4, op=0, x=1007, y=496
+2025-08-15 17:39:34,095 - INFO - Operación: key=4, op=0, x=1044, y=525
+2025-08-15 17:39:34,095 - INFO - Operación: key=1, op=100, x=1062, y=530
+2025-08-15 17:39:34,178 - INFO - Enviada imagen completa: 146695 bytes
+2025-08-15 17:39:34,196 - INFO - Mouse: botón izquierdo presionado
+2025-08-15 17:39:34,196 - INFO - Operación: key=4, op=0, x=1130, y=526
+2025-08-15 17:39:34,196 - INFO - Operación: key=1, op=117, x=1204, y=426
+2025-08-15 17:39:34,297 - INFO - Mouse: botón izquierdo soltado
+2025-08-15 17:39:34,297 - INFO - Operación: key=4, op=0, x=1214, y=403
+2025-08-15 17:39:34,297 - INFO - Operación: key=4, op=0, x=1259, y=289
+2025-08-15 17:39:34,297 - INFO - Operación: key=4, op=0, x=1282, y=117
+2025-08-15 17:39:34,308 - INFO - Enviada imagen diferencial: 109845 bytes
+2025-08-15 17:39:34,318 - INFO - Operación: key=4, op=0, x=1282, y=82
+2025-08-15 17:39:34,378 - INFO - Operación: key=4, op=0, x=1281, y=42
+2025-08-15 17:39:34,435 - INFO - Enviada imagen diferencial: 29132 bytes
+2025-08-15 17:39:34,444 - INFO - Operación: key=4, op=0, x=1281, y=21
+2025-08-15 17:39:34,504 - INFO - Operación: key=4, op=0, x=1282, y=6
+2025-08-15 17:39:34,942 - INFO - Enviada imagen completa: 150532 bytes
+2025-08-15 17:39:35,103 - INFO - Enviada imagen completa: 148461 bytes
+2025-08-15 17:39:35,262 - INFO - Enviada imagen completa: 154114 bytes
+2025-08-15 17:39:35,412 - INFO - Enviada imagen completa: 162276 bytes
+2025-08-15 17:39:35,514 - INFO - Operación: key=4, op=0, x=1643, y=3
+2025-08-15 17:39:35,554 - INFO - Enviada imagen completa: 179058 bytes
+2025-08-15 17:39:35,697 - INFO - Enviada imagen completa: 187416 bytes
+2025-08-15 17:39:35,829 - INFO - Enviada imagen completa: 189531 bytes
+2025-08-15 17:39:35,953 - INFO - Enviada imagen diferencial: 41060 bytes
+2025-08-15 17:39:36,083 - INFO - Enviada imagen diferencial: 27211 bytes
+2025-08-15 17:39:36,215 - INFO - Enviada imagen diferencial: 14541 bytes
+2025-08-15 17:39:36,394 - INFO - Enviada imagen completa: 185736 bytes
+2025-08-15 17:39:36,554 - INFO - Enviada imagen completa: 167159 bytes
+2025-08-15 17:39:36,696 - INFO - Enviada imagen completa: 168307 bytes
+2025-08-15 17:39:36,942 - INFO - Enviada imagen diferencial: 8868 bytes
+2025-08-15 17:39:37,074 - INFO - Enviada imagen completa: 167024 bytes
+2025-08-15 17:39:37,203 - INFO - Enviada imagen diferencial: 8868 bytes
+2025-08-15 17:39:37,788 - INFO - Enviada imagen diferencial: 12231 bytes
+2025-08-15 17:39:37,911 - INFO - Enviada imagen diferencial: 11281 bytes
+2025-08-15 17:39:38,149 - INFO - Enviada imagen diferencial: 8868 bytes
+2025-08-15 17:39:38,501 - INFO - Enviada imagen diferencial: 11281 bytes
+2025-08-15 17:39:38,627 - INFO - Enviada imagen diferencial: 11281 bytes
+2025-08-15 17:39:38,752 - INFO - Enviada imagen diferencial: 8868 bytes
+2025-08-15 17:39:38,877 - INFO - Enviada imagen diferencial: 14000 bytes
+2025-08-15 17:39:39,003 - INFO - Enviada imagen diferencial: 13889 bytes
+2025-08-15 17:39:39,238 - INFO - Enviada imagen diferencial: 14510 bytes
+2025-08-15 17:39:39,488 - INFO - Enviada imagen completa: 165639 bytes
+2025-08-15 17:39:39,612 - INFO - Enviada imagen diferencial: 88012 bytes
+2025-08-15 17:39:39,854 - INFO - Enviada imagen diferencial: 9258 bytes
+2025-08-15 17:39:40,431 - INFO - Enviada imagen diferencial: 30339 bytes
+2025-08-15 17:39:40,556 - INFO - Enviada imagen diferencial: 36639 bytes
+2025-08-15 17:39:40,794 - INFO - Enviada imagen diferencial: 8772 bytes
+2025-08-15 17:39:40,918 - INFO - Enviada imagen diferencial: 12250 bytes
+2025-08-15 17:39:41,043 - INFO - Enviada imagen diferencial: 8482 bytes
+2025-08-15 17:39:41,168 - INFO - Enviada imagen diferencial: 24558 bytes
+2025-08-15 17:39:41,738 - INFO - Enviada imagen diferencial: 24558 bytes
+2025-08-15 17:39:41,863 - INFO - Enviada imagen diferencial: 25118 bytes
+2025-08-15 17:39:41,990 - INFO - Enviada imagen diferencial: 28448 bytes
+2025-08-15 17:39:42,116 - INFO - Enviada imagen completa: 163428 bytes
+2025-08-15 17:39:42,400 - INFO - Enviada imagen completa: 146604 bytes
+2025-08-15 17:39:42,538 - INFO - Enviada imagen diferencial: 16674 bytes
+2025-08-15 17:39:42,663 - INFO - Enviada imagen diferencial: 10357 bytes
+2025-08-15 17:39:42,788 - INFO - Enviada imagen diferencial: 9604 bytes
+2025-08-15 17:39:42,912 - INFO - Enviada imagen diferencial: 11116 bytes
+2025-08-15 17:39:43,037 - INFO - Enviada imagen diferencial: 9418 bytes
+2025-08-15 17:39:43,159 - INFO - Enviada imagen diferencial: 9435 bytes
+2025-08-15 17:39:43,394 - INFO - Enviada imagen diferencial: 9467 bytes
+2025-08-15 17:39:43,858 - INFO - Error en función de control: [WinError 10054] Se ha forzado la interrupción de una conexión existente por el host remoto
+2025-08-15 17:39:43,858 - ERROR - Error en función de control: [WinError 10054] Se ha forzado la interrupción de una conexión existente por el host remoto
+2025-08-15 17:39:43,863 - INFO - Error en función de manejo de imágenes: [WinError 10054] Se ha forzado la interrupción de una conexión existente por el host remoto
+2025-08-15 17:39:43,863 - ERROR - Error en función de manejo de imágenes: [WinError 10054] Se ha forzado la interrupción de una conexión existente por el host remoto

@@ -1,0 +1,52 @@
+2025-08-15 17:35:14,508 - INFO - Sistema de logging inicializado
+2025-08-15 17:35:14,510 - INFO - Iniciando configuración automática de IP...
+2025-08-15 17:35:14,511 - INFO - IP leída desde archivo: 192.168.1.74
+2025-08-15 17:35:14,511 - INFO - Configuración final: 192.168.1.74:3380
+2025-08-15 17:35:29,631 - INFO - Iniciando conexión con el servidor...
+2025-08-15 17:35:31,673 - INFO - Error en función run(): [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+2025-08-15 17:35:56,373 - INFO - Sistema de logging inicializado
+2025-08-15 17:35:56,376 - INFO - Iniciando configuración automática de IP...
+2025-08-15 17:35:56,376 - INFO - IP obtenida desde argumentos: 192.168.1.19
+2025-08-15 17:35:56,376 - INFO - Configuración final: 192.168.1.19:3380
+2025-08-15 17:36:01,529 - INFO - Iniciando conexión con el servidor...
+2025-08-15 17:36:51,927 - INFO - Sistema de logging inicializado
+2025-08-15 17:36:51,927 - INFO - Iniciando configuración automática de IP...
+2025-08-15 17:36:51,927 - INFO - IP leída desde archivo: 192.168.1.74
+2025-08-15 17:36:51,927 - INFO - Configuración final: 192.168.1.74:3380
+2025-08-15 17:38:12,786 - INFO - Sistema de logging inicializado
+2025-08-15 17:38:12,788 - INFO - Iniciando configuración automática de IP...
+2025-08-15 17:38:12,788 - INFO - IP leída desde archivo: 192.168.1.74
+2025-08-15 17:38:12,789 - INFO - Configuración final: 192.168.1.74:3380
+2025-08-15 17:38:14,427 - INFO - Sistema de logging inicializado
+2025-08-15 17:38:14,429 - INFO - Iniciando configuración automática de IP...
+2025-08-15 17:38:14,429 - INFO - IP leída desde archivo: 192.168.1.74
+2025-08-15 17:38:14,429 - INFO - Configuración final: 192.168.1.74:3380
+2025-08-15 17:38:15,952 - INFO - Sistema de logging inicializado
+2025-08-15 17:38:15,955 - INFO - Iniciando configuración automática de IP...
+2025-08-15 17:38:15,955 - INFO - IP leída desde archivo: 192.168.1.74
+2025-08-15 17:38:15,955 - INFO - Configuración final: 192.168.1.74:3380
+2025-08-15 17:38:17,196 - INFO - Sistema de logging inicializado
+2025-08-15 17:38:17,198 - INFO - Iniciando configuración automática de IP...
+2025-08-15 17:38:17,199 - INFO - IP leída desde archivo: 192.168.1.74
+2025-08-15 17:38:17,199 - INFO - Configuración final: 192.168.1.74:3380
+2025-08-15 17:38:18,236 - INFO - Sistema de logging inicializado
+2025-08-15 17:38:18,238 - INFO - Iniciando configuración automática de IP...
+2025-08-15 17:38:18,238 - INFO - IP leída desde archivo: 192.168.1.74
+2025-08-15 17:38:18,238 - INFO - Configuración final: 192.168.1.74:3380
+2025-08-15 17:38:28,719 - INFO - Sistema de logging inicializado
+2025-08-15 17:38:28,722 - INFO - Iniciando configuración automática de IP...
+2025-08-15 17:38:28,722 - INFO - IP leída desde archivo: 192.168.1.74
+2025-08-15 17:38:28,722 - INFO - Configuración final: 192.168.1.74:3380
+2025-08-15 17:39:17,306 - INFO - Sistema de logging inicializado
+2025-08-15 17:39:17,309 - INFO - Iniciando configuración automática de IP...
+2025-08-15 17:39:17,309 - INFO - IP leída desde archivo: 192.168.1.74
+2025-08-15 17:39:17,310 - INFO - Configuración final: 192.168.1.74:3380
+2025-08-15 17:39:32,440 - INFO - Iniciando conexión con el servidor...
+2025-08-15 17:39:32,442 - INFO - Socket configurado correctamente
+2025-08-15 17:39:32,442 - INFO - Información de plataforma enviada: b'win'
+2025-08-15 17:39:32,510 - INFO - Recibiendo imagen inicial: tipo=1, tamaño=167163
+2025-08-15 17:39:32,522 - INFO - Imagen inicial recibida: 1920x1080
+2025-08-15 17:39:32,557 - INFO - Canvas configurado con escala: 0.97
+2025-08-15 17:39:32,567 - INFO - Escala actualizada: 0.97
+2025-08-15 17:39:40,592 - INFO - Error en recepción de frame: main thread is not in main loop
+2025-08-15 17:39:41,689 - INFO - Error en función run(): main thread is not in main loop
