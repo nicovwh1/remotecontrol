@@ -106,9 +106,9 @@ socks5 = None
 
 
 # Configuración de IP automática
-IP_FILE_PATH = "D:\\shared\\nico\\Desktop\\Netcool\\script\\ipwork.txt"
-FALLBACK_HOSTNAME = "mail.nicodf.mooo.com"
-DEFAULT_IP = "192.168.1.74"
+IP_FILE_PATH = ""
+FALLBACK_HOSTNAME = ""
+DEFAULT_IP = "192.168.1.1"
 DEFAULT_PORT = 3380
 
 # Plataforma
