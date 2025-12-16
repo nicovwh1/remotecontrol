@@ -152,9 +152,9 @@ CLIENTE (ctrl)                              SERVIDOR (bectrl)
 #### Cliente - Configuración Automática de IP
 El cliente implementa un sistema de fallbacks para obtener la IP del servidor:
 
-1. **Prioridad 1**: Lee IP desde archivo `D:\shared\nico\Desktop\Netcool\script\ipwork.txt`
-2. **Prioridad 2**: Si no existe el archivo, hace ping a `mail.nicodf.mooo.com`
-3. **Prioridad 3**: Si la IP no es válida, usa IP por defecto `192.168.1.74`
+1. **Prioridad 1**: Lee IP desde archivo `\ipwork.txt`
+2. **Prioridad 2**: Si no existe el archivo, hace ping a `example.com`
+3. **Prioridad 3**: Si la IP no es válida, usa IP por defecto `192.168.1.2`
 
 ```python
 # Flujo de configuración automática
