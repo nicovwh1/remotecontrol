@@ -158,10 +158,10 @@ El cliente implementa un sistema de fallbacks para obtener la IP del servidor:
 
 ```python
 # Flujo de configuración automática
-IP_FILE_PATH = "D:\\shared\\nico\\Desktop\\Netcool\\script\\ipwork.txt"
-FALLBACK_HOSTNAME = "mail.nicodf.mooo.com"
-DEFAULT_IP = "192.168.1.74"
-DEFAULT_PORT = 3380
+IP_FILE_PATH = "ipwork.txt"
+FALLBACK_HOSTNAME = "examploe.com"
+DEFAULT_IP = "192.168.1.1"
+DEFAULT_PORT = 338
 ```
 
 #### Servidor - Detección Automática de IP Local
